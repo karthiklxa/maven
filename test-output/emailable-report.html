@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">chromeTest</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">297,130</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">firefoxTest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">80,633</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num attn">1</th><th class="num">377,763</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chromeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.actitime.tests.InvalidLoginTest</td><td><a href="#m0">testInvalidLogin</a></td><td rowspan="1">1518444125870</td><td rowspan="1">11823</td></tr><tr><th colspan="4">chromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.actitime.tests.ValidLoginLogoutTest</td><td><a href="#m1">testValidLoginLogout</a></td><td rowspan="1">1518444167449</td><td rowspan="1">12260</td></tr><tr class="passedodd"><td rowspan="1">com.actitime.tests.VerifyBuildTest</td><td><a href="#m2">testVerifyBuild</a></td><td rowspan="1">1518444195189</td><td rowspan="1">8250</td></tr><tr class="passedeven"><td rowspan="1">com.actitime.tests.VerifyVersionTest</td><td><a href="#m3">testVerifyVersion</a></td><td rowspan="1">1518444220862</td><td rowspan="1">351</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">firefoxTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.actitime.tests.InvalidLoginTest</td><td><a href="#m4">testInvalidLogin</a></td><td rowspan="1">1518444236427</td><td rowspan="1">4425</td></tr><tr class="passedodd"><td rowspan="1">com.actitime.tests.ValidLoginLogoutTest</td><td><a href="#m5">testValidLoginLogout</a></td><td rowspan="1">1518444256580</td><td rowspan="1">8762</td></tr><tr class="passedeven"><td rowspan="1">com.actitime.tests.VerifyBuildTest</td><td><a href="#m6">testVerifyBuild</a></td><td rowspan="1">1518444280936</td><td rowspan="1">7442</td></tr><tr class="passedodd"><td rowspan="1">com.actitime.tests.VerifyVersionTest</td><td><a href="#m7">testVerifyVersion</a></td><td rowspan="1">1518444301707</td><td rowspan="1">257</td></tr></tbody>
+</table>
+<h2>chromeTest</h2><h3 id="m0">com.actitime.tests.InvalidLoginTest#testInvalidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">title is matchingactiTIME - Login</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T19:05:32.194Z&apos;
+System info: host: &apos;LAPTOP-F9SA4CRT&apos;, ip: &apos;192.168.79.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\MKISHO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
+Session ID: 4f310e6d07314a4deaea1e0bb6a9a16b
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+	at com.actitime.page.LoginPage.enterUN(LoginPage.java:38)
+	at com.actitime.tests.InvalidLoginTest.testInvalidLogin(InvalidLoginTest.java:24)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.actitime.tests.ValidLoginLogoutTest#testValidLoginLogout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">title is matchingactiTIME - Login<br/>title is matchingactiTIME - Enter Time-Track<br/>title is matchingactiTIME - Login</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.actitime.tests.VerifyBuildTest#testVerifyBuild</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">title is matchingactiTIME - Login<br/>title is matchingactiTIME - Enter Time-Track</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.actitime.tests.VerifyVersionTest#testVerifyVersion</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">title is matchingactiTIME - Login</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>firefoxTest</h2><h3 id="m4">com.actitime.tests.InvalidLoginTest#testInvalidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">title is matchingactiTIME - Login<br/>element is matching[[RemoteWebDriver: chrome on XP (85bfc7347f490b1858f3d138802e1af5)] -> xpath: //span[contains(.,'invalid')]]</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.actitime.tests.ValidLoginLogoutTest#testValidLoginLogout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">title is matchingactiTIME - Login<br/>title is matchingactiTIME - Enter Time-Track<br/>title is matchingactiTIME - Login</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.actitime.tests.VerifyBuildTest#testVerifyBuild</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">title is matchingactiTIME - Login<br/>title is matchingactiTIME - Enter Time-Track</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.actitime.tests.VerifyVersionTest#testVerifyVersion</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">title is matchingactiTIME - Login</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

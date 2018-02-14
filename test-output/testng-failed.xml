@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="nodeUrl" value="http://192.168.79.1:4444/wd/hub"/>
+    <parameter name="appUrl" value="https://demo.actitime.com/login.do"/>
+    <classes>
+      <class name="com.actitime.tests.InvalidLoginTest">
+        <methods>
+          <include name="testInvalidLogin"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.actitime.tests.InvalidLoginTest -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
